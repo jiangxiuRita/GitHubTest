@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <uses-library android:name="com.google.android.things" />
 
-        <activity android:name=".activity_ppublic">
+        <activity android:name=".activity_publish">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

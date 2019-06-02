@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 
 public class activity_home extends AppCompatActivity {
@@ -19,7 +17,7 @@ public class activity_home extends AppCompatActivity {
         imageButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( activity_home.this,activity_ppublic.class );
+                Intent intent = new Intent( activity_home.this, activity_publish.class );
                 startActivity( intent );
             }
         } );

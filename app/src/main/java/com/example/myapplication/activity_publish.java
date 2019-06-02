@@ -4,11 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-public class activity_ppublic extends AppCompatActivity {
+public class activity_publish extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_ppublic );
+        setContentView( R.layout.activity_publish );
+
     }
 }
