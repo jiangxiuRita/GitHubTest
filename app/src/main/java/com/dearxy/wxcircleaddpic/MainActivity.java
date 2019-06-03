@@ -1,12 +1,17 @@
 package com.dearxy.wxcircleaddpic;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.config.PictureConfig;
@@ -34,6 +39,19 @@ public class MainActivity extends AppCompatActivity {
         mContext = this;
         gridView = (GridView) findViewById(R.id.gridView);
         initGridView();
+
+
+
+        Button button = (Button) findViewById( R.id.push );
+        button.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this,"发送成功！",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent( MainActivity.this,Main2Activity.class );
+                startActivity( intent );
+            }
+        } );
     }
 
     //初始化展示上传图片的GridView
